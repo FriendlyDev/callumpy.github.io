@@ -1,0 +1,30 @@
+#main {
+  font-family: "Inter", sans-serif;
+  background-image: url("/img/background.webp");
+  background-size: cover;
+}
+
+.no-js #main {
+  background-image: url("/img/background.jpg");
+}
+
+#main #content {
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+#main #content .contacts span:after {
+  content: "|";
+  margin: auto 1em;
+}
+
+#main #content .contacts span:last-child:after {
+  content: "";
+  margin: 0;
+}
+
+#main #content .contacts span i.fab,
+#main #content .contacts span i.fas {
+  margin-right: 5px;
+}
