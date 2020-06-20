@@ -14,7 +14,7 @@
   backdrop-filter: blur(6px);
 }
 
-#main #content .contacts span:after {
+/* #main #content .contacts span:after {
   content: "|";
   margin: auto 1em;
 }
@@ -22,7 +22,7 @@
 #main #content .contacts span:last-child:after {
   content: "";
   margin: 0;
-}
+} */
 
 #main #content .contacts span i.fab,
 #main #content .contacts span i.fas {
