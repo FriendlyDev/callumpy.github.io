@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#main {
+  font-family: "Inter", sans-serif;
+  background-image: url("/img/background.webp");
+  background-size: cover;
+
+  #content {
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+
+    .contacts {
+      span {
+        i.fab,
+        i.fas {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.no-js #main {
+  background-image: url("/img/background.jpg");
+}
