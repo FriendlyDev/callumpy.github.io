@@ -55,10 +55,7 @@
     <meta name="theme-color" content="#2196F3">
 
     <!-- Styles -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.13.1/inter.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.min.css">
 </head>
 
 <body>
@@ -93,7 +90,14 @@
                     <br class="hidden md:block" />
 
                     helping to transition to the cloud
-                    <i class="fa fa-cloud text-gray-300 shadow-2xl" aria-hidden="true"></i>
+
+                    <svg class="inline -mt-1 h-5 w-5 text-gray-300 shadow-2xl" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="cloud" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512">
+                        <path fill="currentColor"
+                            d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4z">
+                        </path>
+                    </svg>
                 </h3>
 
 
@@ -101,37 +105,75 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 mb-2">
                         <a href="https://www.facebook.com/callumpy" target="_blank"
                             class="text-normal hover:text-blue-800">
-                            <i class="fab fa-facebook"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                </path>
+                            </svg>
+
                             Facebook
                         </a>
 
                         <a href="https://www.linkedin.com/in/callumpy/" target="_blank"
                             class="text-normal hover:text-blue-800">
-                            <i class="fab fa-linkedin"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                </path>
+                            </svg>
+
                             Linkedin
                         </a>
 
                         <a href="https://mygamerprofile.net/gamer/callumpy" target="_blank"
                             class="text-normal hover:text-blue-800">
-                            <i class="fab fa-xbox"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="xbox" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M369.9 318.2c44.3 54.3 64.7 98.8 54.4 118.7-7.9 15.1-56.7 44.6-92.6 55.9-29.6 9.3-68.4 13.3-100.4 10.2-38.2-3.7-76.9-17.4-110.1-39C93.3 445.8 87 438.3 87 423.4c0-29.9 32.9-82.3 89.2-142.1 32-33.9 76.5-73.7 81.4-72.6 9.4 2.1 84.3 75.1 112.3 109.5zM188.6 143.8c-29.7-26.9-58.1-53.9-86.4-63.4-15.2-5.1-16.3-4.8-28.7 8.1-29.2 30.4-53.5 79.7-60.3 122.4-5.4 34.2-6.1 43.8-4.2 60.5 5.6 50.5 17.3 85.4 40.5 120.9 9.5 14.6 12.1 17.3 9.3 9.9-4.2-11-.3-37.5 9.5-64 14.3-39 53.9-112.9 120.3-194.4zm311.6 63.5C483.3 127.3 432.7 77 425.6 77c-7.3 0-24.2 6.5-36 13.9-23.3 14.5-41 31.4-64.3 52.8C367.7 197 427.5 283.1 448.2 346c6.8 20.7 9.7 41.1 7.4 52.3-1.7 8.5-1.7 8.5 1.4 4.6 6.1-7.7 19.9-31.3 25.4-43.5 7.4-16.2 15-40.2 18.6-58.7 4.3-22.5 3.9-70.8-.8-93.4zM141.3 43C189 40.5 251 77.5 255.6 78.4c.7.1 10.4-4.2 21.6-9.7 63.9-31.1 94-25.8 107.4-25.2-63.9-39.3-152.7-50-233.9-11.7-23.4 11.1-24 11.9-9.4 11.2z">
+                                </path>
+                            </svg>
+
                             MyGamerProfile
                         </a>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 mb-2">
                         <a href="https://twitch.tv/callumpy" target="_blank" class="text-normal hover:text-blue-800">
-                            <i class="fab fa-twitch"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="twitch" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z">
+                                </path>
+                            </svg>
+
                             Twitch
                         </a>
 
                         <a href="https://twitter.com/callumpy" target="_blank" class="text-normal hover:text-blue-800">
-                            <i class="fab fa-twitter"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+
                             Twitter
                         </a>
 
                         <a href="https://www.youtube.com/callumpy" target="_blank"
                             class="text-normal hover:text-blue-800">
-                            <i class="fab fa-youtube"></i>
+                            <svg class="inline -mt-1 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fab"
+                                data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                </path>
+                            </svg>
+
                             Youtube
                         </a>
                     </div>
@@ -140,7 +182,13 @@
                 <span class="inline-flex rounded-md shadow-sm mb-2 mt-1">
                     <a href="/callum-parkinson-cv.pdf"
                         class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
-                        <i class="fas fa-file-pdf mr-3"></i>
+                        <svg class="-ml-1 mr-3 h-5 w-5" aria-hidden="true" focusable="false" data-prefix="fas"
+                            data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path fill="currentColor"
+                                d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                            </path>
+                        </svg>
+
                         Download My CV
                     </a>
                 </span>
@@ -148,6 +196,7 @@
         </div>
     </div>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.13.1/inter.css" rel="stylesheet" />
     <script>
         document.documentElement.classList.remove("no-js");
     </script>
