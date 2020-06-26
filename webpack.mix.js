@@ -15,7 +15,7 @@ require("laravel-mix-tailwind");
 
 mix
   .setPublicPath("./")
-  .js("src/js/app.js", "./js/app.js")
+  .js(["src/js/app.js", "src/js/modernizr-custom.js"], "./js/app.js")
   .sass("src/scss/app.scss", "./css/app.css")
   .tailwind("./tailwind.config.js")
   .sourceMaps();
